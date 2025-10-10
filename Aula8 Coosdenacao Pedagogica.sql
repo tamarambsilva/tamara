@@ -19,6 +19,7 @@ CREATE TABLE Comentario (
     id_aluno INT,
     id_professor INT,
     Comentario TEXT,
+    Notadoprofessor DECIMAL(3,1),
     FOREIGN KEY (id_aluno) REFERENCES Aluno(id_aluno),
     FOREIGN KEY (id_professor) REFERENCES Professor(id_professor)
     );
